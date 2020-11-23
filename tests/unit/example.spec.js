@@ -35,7 +35,8 @@ describe('Products.vue', () => {
       price: 100.0,
       qty: 1,
     }]
-    wrapper.find('.button').trigger('click');
-    expect(wrapper.vm.addToCart.mock.calls).toBe(true);
+    const addButton = wrapper.find('i')
+    addButton.trigger('click')
+    expect(wrapper.vm.addToCart.mock.calls.length).toBe(1);
   })
 })

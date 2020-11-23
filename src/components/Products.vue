@@ -56,7 +56,7 @@
                 <button @click="incrQty(p.id)"><i class="mdi mdi-plus"></i></button>
               </div>
               <button @click="addToCart(p)" class="button is-pulled-right is-warning">
-                <i class="mdi mdi-cart"></i>
+                <i class="mdi mdi-cart"  id="button"></i>
               </button>
               <div class="is-clearfix"></div>
             </div>
